@@ -1,7 +1,36 @@
-
 ### Changelog
 
-- 2.2.2 (dev)
+
+- 2.2.8 (10/06/2018)
+  - [FIX] #82 RT FIX
+  - [FIX] make curl https compatible
+  - [FIX] #108 poll layout issue
+
+- 2.2.7 (25/02/2018) 
+  - [NEW] #82 recent topics is now available on a special page http://url/app.php/rt
+  - [CHG] now uses phpbb 3.2 language class
+  - [CHG] #77 moved setting for number of recent topics per page to ucp
+  - [FIX] fix potential nullreference error in $start
+  - [FIX] languge nl, de (missing variables)
+  - [ADD] language ar (@alhitary), ru (@SiavaRu), pt (@borgesjoaquim)
+   
+- 2.2.6 (28/10/2017) 
+  - [NEW] #43 Supports Collapsable categories extension for prosilver.   
+  - [CHG] #76 Switched to Twig syntax
+  - [FIX] #72, #19 clickable topic icon
+  - [FIX] #75 remove quoted integer value 
+  
+- 2.2.5 (30/09/2017) 
+  - [FIX] #68 fixed unescaped line in acp
+  - [FIX] #67 fixed overflow links in paging for unread and alltopics mode.
+
+- 2.2.4 (18/09/2017)
+  - [FIX] Fix bug with pagination (Tatiana5)
+
+- 2.2.3 (17/09/2017)
+  - [FIX] Add template event handler for recenttopics_mchat_side in index_body_markforums_after.html event. 
+
+- 2.2.2 (16/09/2017)
   - [FIX] Corrected confusing ACP labels regarding the number of pages.
   - [FIX] Fixed the number of pages limitation option in ACP. Now the number of recent topic pages can be limited. 
   - [FIX] Fixed the override the maximum number of pages shown ACP checkbox.

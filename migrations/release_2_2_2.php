@@ -30,8 +30,9 @@ class release_2_2_2 extends \phpbb\db\migration\migration
 		return array(
 			array('config.update', array('rt_version', '2.2.2')),
 			array('config.add', array('rt_page_numbermax', 0)),
+			array('config.update', array('rt_number', '5')),
+			array('config.update', array('rt_page_numbermax', '10')),
 		);
-
 	}
 
 	public function revert_data()
@@ -42,9 +43,5 @@ class release_2_2_2 extends \phpbb\db\migration\migration
 			// fixes bug in 2.1.2 migration
 			array('permission.remove', array('u_rt_view')),
 		);
-
 	}
-
 }
-
-
